@@ -1,6 +1,6 @@
-# KARS Pet States Reference
+# Tarsy Pet States Reference
 
-This is the working reference for the KARS Codex pet. It describes the fixed
+This is the working reference for the Tarsy Codex pet. It describes the fixed
 Codex pet atlas contract and the intended visual meaning of each animation row.
 
 ## Atlas Contract
@@ -14,7 +14,7 @@ Codex pet atlas contract and the intended visual meaning of each animation row.
 
 ## Rows
 
-| Row | State | Frames | Purpose | KARS visual direction |
+| Row | State | Frames | Purpose | Tarsy visual direction |
 | --- | --- | ---: | --- | --- |
 | 0 | `idle` | 6 | Calm resting baseline. | Tiny screen blink, subtle body bob, quiet servo breathing. First frame must work as static reduced-motion pet. |
 | 1 | `running-right` | 8 | Dragging/moving right. | Modular blue blocks tilt and step right; no speed lines or dust. |
@@ -26,9 +26,16 @@ Codex pet atlas contract and the intended visual meaning of each animation row.
 | 7 | `running` | 6 | Codex is actively working. | Busy processing motion: panels click, eyes scan, inner light pulses. Not literal running. |
 | 8 | `review` | 6 | Ready for review or inspecting output. | Focused lean/head tilt, narrowed screen eyes, precise inspection posture. |
 
+## Naming
+
+- Plugin/repo folder: `Tarsy`
+- Pet id: `tarsy`
+- Display name: `Tarsy`
+- Russian name: `Тарси`
+
 ## Visual Brief
 
-KARS should read as a native Codex-blue companion: compact, funny, modular, and
+Tarsy should read as a native Codex-blue companion: compact, funny, modular, and
 robotic. The shape can borrow the idea of hinged block mechanics from a dry
 space-assistant archetype, but should not copy a film-accurate silhouette,
 materials, markings, or proportions.
@@ -46,7 +53,7 @@ Useful constraints:
 When the pet is built, the local custom pet package should be:
 
 ```text
-${CODEX_HOME:-$HOME/.codex}/pets/kars/
+${CODEX_HOME:-$HOME/.codex}/pets/tarsy/
 ├── pet.json
 └── spritesheet.webp
 ```
@@ -55,9 +62,9 @@ ${CODEX_HOME:-$HOME/.codex}/pets/kars/
 
 ```json
 {
-  "id": "kars",
-  "displayName": "KARS",
-  "description": "A dry little Codex-blue robot with adjustable sarcasm.",
+  "id": "tarsy",
+  "displayName": "Tarsy",
+  "description": "A dry little Codex-blue robot named Тарси with adjustable sarcasm.",
   "spritesheetPath": "spritesheet.webp"
 }
 ```

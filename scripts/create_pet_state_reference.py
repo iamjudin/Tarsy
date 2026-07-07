@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a schematic KARS pet state reference sheet."""
+"""Create a schematic Tarsy pet state reference sheet."""
 
 from __future__ import annotations
 
@@ -60,7 +60,7 @@ def rounded(draw: ImageDraw.ImageDraw, box: tuple[int, int, int, int], radius: i
     draw.rounded_rectangle(box, radius=radius, fill=fill, outline=outline, width=width)
 
 
-def draw_kars(draw: ImageDraw.ImageDraw, cx: int, cy: int, state: str, frame: int, frames: int) -> None:
+def draw_tarsy(draw: ImageDraw.ImageDraw, cx: int, cy: int, state: str, frame: int, frames: int) -> None:
     t = frame / max(frames - 1, 1)
     bob = 0
     lean = 0
@@ -148,7 +148,7 @@ def main() -> None:
     image = Image.new("RGB", (width, height), BG)
     draw = ImageDraw.Draw(image)
 
-    draw.text((18, 10), "KARS pet state reference", font=FONT_TITLE, fill=INK)
+    draw.text((18, 10), "Tarsy pet state reference", font=FONT_TITLE, fill=INK)
     draw.text((18, 42), "8 atlas columns; unused cells should be transparent", font=FONT_SMALL, fill=MUTED)
 
     y = HEADER_H
@@ -167,7 +167,7 @@ def main() -> None:
             box = (x + 8, row_top + 8, x + CELL_W - 8, row_top + CELL_H - 8)
             if col < frames:
                 rounded(draw, box, 8, (255, 255, 255), GRID, 1)
-                draw_kars(draw, x + CELL_W // 2, row_top + 52, state, col, frames)
+                draw_tarsy(draw, x + CELL_W // 2, row_top + 52, state, col, frames)
                 draw.text((x + 14, row_top + CELL_H - 24), f"f{col + 1}", font=FONT_TINY, fill=MUTED)
             else:
                 rounded(draw, box, 8, TRANSPARENT_HINT, GRID, 1)
