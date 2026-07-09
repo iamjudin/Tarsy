@@ -26,6 +26,93 @@ Codex pet atlas contract and the intended visual meaning of each animation row.
 | 7 | `running` | 6 | Codex is actively working. | Busy processing motion: panels click, eyes scan, inner light pulses. Not literal running. |
 | 8 | `review` | 6 | Ready for review or inspecting output. | Focused lean/head tilt, narrowed screen eyes, precise inspection posture. |
 
+## State Semantics
+
+### `idle`
+
+Default resting state. Use this when Codex is present but not actively doing
+anything attention-worthy in the current moment.
+
+Tarsy should look alive but quiet: a tiny blink, a subtle body bob, or a small
+servo-breathing motion. This row must be low-distraction because it can sit on
+screen for a long time. The first frame also needs to work as a static
+reduced-motion pet.
+
+### `running-right`
+
+Directional movement to the right. Use this when the pet overlay needs a
+rightward locomotion/drag animation, for example when the pet is repositioning
+or moving across the overlay.
+
+Tarsy should clearly travel or lean right through body mechanics only. Avoid
+speed lines, dust, shadows, or external effects; the direction should be clear
+from the robot's pose and block movement.
+
+### `running-left`
+
+Directional movement to the left. This is the left-facing counterpart to
+`running-right`, used for leftward movement/repositioning.
+
+It can be mirrored from `running-right` only if the design remains visually
+correct after mirroring. If face details, asymmetrical panels, marks, or lighting
+make mirroring look wrong, redraw/export a dedicated left-facing row.
+
+### `waving`
+
+Greeting or attention state. Use this when the pet is being woken, introduced,
+selected, or otherwise needs a friendly "hello, I'm here" gesture.
+
+Tarsy should do a restrained mechanical salute or panel wave. Keep the gesture
+clear inside the body silhouette. Do not add wave marks, sparkles, symbols, or
+floating punctuation.
+
+### `jumping`
+
+Playful hop, lift, or excited acknowledgement. Use this when a small celebratory
+or energetic reaction is appropriate, such as a successful activation or a
+lightweight positive moment.
+
+Tarsy should compress, rise, hit a peak, descend, and settle. Show motion by
+body height and pose only. Avoid floor shadows, impact marks, dust, or bounce
+pads because those become extraction noise in a transparent pet atlas.
+
+### `failed`
+
+Failure, cancellation, or blocked/error state. Use this when a task fails,
+stops, gets cancelled, or reaches a state that should read as "something went
+wrong."
+
+Tarsy should slump, dim, fold inward, or look mildly defeated. Attached smoke or
+tiny attached sparks are acceptable if they remain part of the sprite, but avoid
+red X marks, detached symbols, and dramatic UI-like error graphics.
+
+### `waiting`
+
+Blocked-on-user-input state. Use this when Codex is waiting for approval,
+clarification, credentials, a permission prompt, or another user decision.
+
+Tarsy should look patient and expectant, not broken. A small lean, raised screen
+eyes, or polite pause pose works well. This must be visually distinct from
+`idle`, because it means the user needs to do something.
+
+### `running`
+
+Active work state. Use this while Codex is executing a command, editing files,
+thinking through a task, generating output, running tests, or otherwise actively
+working.
+
+Despite the name, this is not foot-running. Tarsy should look like it is
+processing: panels clicking, eyes scanning, inner light pulsing, tiny mechanical
+busy motion. Avoid directional travel, sprinting poses, speed lines, or dust.
+
+### `review`
+
+Ready-for-review or inspection state. Use this when Codex has produced a result,
+finished a meaningful step, or wants the user to inspect changes/output.
+
+Tarsy should look focused and evaluative: a lean, narrowed eyes, screen tilt, or
+precise inspection posture. This should feel competent and dry, not celebratory.
+
 ## Naming
 
 - Plugin/repo folder: `Tarsy`
