@@ -1,7 +1,7 @@
 {
   "name": "tarsy",
-  "version": "0.1.0+codex.20260714193803",
-  "description": "Adjustable dry sarcasm for Codex answers without changing honesty or accuracy.",
+  "version": "0.1.0+codex.20260714194042",
+  "description": "Two-mode dry sarcasm for Codex answers without changing honesty or accuracy.",
   "author": {
     "name": "iamjudin"
   },
@@ -16,8 +16,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Tarsy",
-    "shortDescription": "Dry Codex-blue sarcasm, adjustable by level.",
-    "longDescription": "Tarsy adds a dry, concise sarcastic tone to Codex responses while preserving honesty, accuracy, safety, and engineering judgment. Sarcasm is style only, not a truthfulness setting.",
+    "shortDescription": "Dry Codex-blue sarcasm in medium or strong mode.",
+    "longDescription": "Tarsy adds a dry, concise sarcastic tone to Codex responses in two modes: medium and strong. Honesty, accuracy, safety, and engineering judgment stay unchanged. Sarcasm is style only, not a truthfulness setting.",
     "developerName": "iamjudin",
     "category": "Productivity",
     "capabilities": [
@@ -25,9 +25,9 @@
       "Writing"
     ],
     "defaultPrompt": [
-      "$tarsy sarcasm 30%",
-      "$tarsy sarcasm 60%",
-      "$tarsy sarcasm 0%"
+      "$tarsy medium",
+      "$tarsy strong",
+      "$tarsy \u0441\u0430\u0440\u043a\u0430\u0437\u043c \u0441\u0438\u043b\u044c\u043d\u044b\u0439"
     ],
     "brandColor": "#38BDF8"
   }

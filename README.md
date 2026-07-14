@@ -1,24 +1,24 @@
 # Tarsy
 
-Tarsy is a local Codex plugin that adds adjustable dry sarcasm to responses while keeping honesty and accuracy fixed.
+Tarsy is a local Codex plugin that adds medium or strong dry sarcasm to responses while keeping honesty and accuracy fixed.
 
 ## Usage
 
-Invoke the skill and set a sarcasm level:
+Invoke the skill and choose one of two sarcasm modes:
 
 ```text
-$tarsy sarcasm 35%
+$tarsy medium
 ```
 
 Examples:
 
 ```text
-$tarsy sarcasm 0%
-$tarsy sarcasm 50%
-$tarsy sarcasm 80%
+$tarsy medium
+$tarsy strong
+$tarsy сарказм сильный
 ```
 
-Only sarcasm changes. Honesty, factuality, safety, and verification stay unchanged.
+Only sarcasm mode changes. Honesty, factuality, safety, and verification stay unchanged.
 
 ## Pet
 
