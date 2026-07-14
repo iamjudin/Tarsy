@@ -1,0 +1,37 @@
+{
+  "name": "tarsy",
+  "version": "0.1.0+codex.20260714201556",
+  "description": "Tarsy adds dry sarcastic tone to Codex.",
+  "author": {
+    "name": "iamjudin"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "codex",
+    "tone",
+    "sarcasm",
+    "assistant",
+    "tarsy"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Tarsy",
+    "shortDescription": "Dry sarcastic tone for Codex.",
+    "longDescription": "Tarsy adds a dry, concise sarcastic tone to Codex responses while preserving honesty, accuracy, safety, and engineering judgment. It also includes an optional Codex pet.",
+    "developerName": "iamjudin",
+    "category": "Productivity",
+    "capabilities": [
+      "Tone",
+      "Writing",
+      "Codex pet"
+    ],
+    "defaultPrompt": [
+      "$tarsy",
+      "$tarsy dry tone",
+      "$tarsy add dry sarcasm"
+    ],
+    "brandColor": "#38BDF8",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
+  }
+}

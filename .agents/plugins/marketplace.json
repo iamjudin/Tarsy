@@ -1,0 +1,20 @@
+{
+  "name": "tarsy",
+  "interface": {
+    "displayName": "Tarsy"
+  },
+  "plugins": [
+    {
+      "name": "tarsy",
+      "source": {
+        "source": "local",
+        "path": "./plugins/tarsy"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

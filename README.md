@@ -1,25 +1,62 @@
 # Tarsy
 
-Tarsy is a local Codex plugin that adds dry sarcasm to responses while keeping honesty and accuracy fixed.
+Tarsy adds dry sarcastic tone to Codex.
 
-## Usage
+It keeps the useful parts boringly intact: honesty, accuracy, safety, and engineering judgment do not become adjustable settings. The sarcasm is tone only.
 
-Invoke the skill to turn on the Tarsy style:
+Tarsy also includes an optional Codex pet: a small Codex-blue robot companion.
+
+## Install
+
+In Terminal, run:
+
+```bash
+codex plugin marketplace add iamjudin/Tarsy
+```
+
+Then open Plugins in Codex, find **Tarsy**, click Add, and start a new chat.
+
+Use Tarsy in a chat:
 
 ```text
 $tarsy
 ```
 
-Examples:
+## Install the pet
 
-```text
-$tarsy
-$tarsy включи сарказм
-$tarsy сухой тон
+After adding the marketplace, install the optional pet from the marketplace snapshot:
+
+```bash
+~/.codex/.tmp/marketplaces/tarsy/scripts/install-pet.sh
 ```
 
-Only tone changes. Honesty, factuality, safety, and verification stay unchanged.
+If Codex already had Tarsy selected, restart Codex or reselect the pet so the app reloads the spritesheet.
 
-## Pet
+## Update
 
-The current prototype pet package is generated separately in `Temp/prototype/package/` and installed into `~/.codex/pets/tarsy/` during local testing.
+In Terminal, run:
+
+```bash
+codex plugin marketplace upgrade tarsy
+```
+
+Then reinstall or upgrade Tarsy in Plugins and start a new chat.
+
+To refresh the pet after an update, run:
+
+```bash
+~/.codex/.tmp/marketplaces/tarsy/scripts/install-pet.sh
+```
+
+## Development
+
+Validate the plugin from the repository root:
+
+```bash
+PYTHONPATH=/private/tmp/tarsy-yaml-shim   python3 /Users/iamjudin/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py plugins/tarsy
+git diff --check
+```
+
+## License
+
+Tarsy is source-available under the [PolyForm Noncommercial 1.0.0](LICENSE) license. It is free to use, modify, and redistribute for noncommercial purposes.
