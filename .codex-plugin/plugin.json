@@ -1,0 +1,34 @@
+{
+  "name": "tarsy",
+  "version": "0.1.0+codex.20260714193803",
+  "description": "Adjustable dry sarcasm for Codex answers without changing honesty or accuracy.",
+  "author": {
+    "name": "iamjudin"
+  },
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "tone",
+    "sarcasm",
+    "assistant",
+    "tarsy"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Tarsy",
+    "shortDescription": "Dry Codex-blue sarcasm, adjustable by level.",
+    "longDescription": "Tarsy adds a dry, concise sarcastic tone to Codex responses while preserving honesty, accuracy, safety, and engineering judgment. Sarcasm is style only, not a truthfulness setting.",
+    "developerName": "iamjudin",
+    "category": "Productivity",
+    "capabilities": [
+      "Style",
+      "Writing"
+    ],
+    "defaultPrompt": [
+      "$tarsy sarcasm 30%",
+      "$tarsy sarcasm 60%",
+      "$tarsy sarcasm 0%"
+    ],
+    "brandColor": "#38BDF8"
+  }
+}
