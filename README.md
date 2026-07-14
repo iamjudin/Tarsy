@@ -1,3 +1,5 @@
+![Tarsy banner](assets/tarsy-github-banner.png)
+
 # Tarsy
 
 Tarsy adds dry sarcastic tone to Codex.
@@ -53,7 +55,9 @@ To refresh the pet after an update, run:
 Validate the plugin from the repository root:
 
 ```bash
-PYTHONPATH=/private/tmp/tarsy-yaml-shim   python3 /Users/iamjudin/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py plugins/tarsy
+PYTHONPATH=/private/tmp/tarsy-yaml-shim python3 \
+  /Users/iamjudin/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py \
+  plugins/tarsy
 git diff --check
 ```
 
