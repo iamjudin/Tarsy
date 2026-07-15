@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
+- Semantic auto-activation rules for conversational thinking, brainstorming, critique, option comparison, and tradeoff analysis prompts.
+- Compatibility guardrails so Tarsy steps back for primary functional plugins, structured artifacts, formal documents, and high-stakes topics.
 - GitHub-ready README with animated and static branding assets.
 - Repository validation script for plugin metadata, public assets, and pet spritesheet checks.
 - GitHub Actions CI workflow.

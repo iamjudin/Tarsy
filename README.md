@@ -2,7 +2,7 @@
 
 # Tarsy
 
-Tarsy adds dry sarcastic tone to Codex.
+Tarsy adds dry sarcastic tone to conversational Codex thinking.
 
 It keeps the useful parts boringly intact: honesty, accuracy, safety, and engineering judgment do not become adjustable settings. The sarcasm is tone only. Yes, apparently we are preserving reality as a feature.
 
@@ -11,6 +11,8 @@ Tarsy also includes an optional Codex pet: a small Codex-blue robot companion.
 ## Features
 
 - One-switch dry sarcastic tone for Codex.
+- Semantic auto-activation for brainstorming, reflection, critique, option comparison, tradeoff analysis, and opinion-style prompts.
+- Compatibility rules that make Tarsy step back for functional plugin workflows, structured artifacts, formal documents, and high-stakes topics.
 - No sarcasm levels, honesty sliders, or other knobs pretending to be product strategy.
 - Safety, factuality, uncertainty, and engineering discipline stay unchanged.
 - Optional animated Tarsy pet for Codex.
@@ -26,11 +28,15 @@ codex plugin marketplace add iamjudin/Tarsy
 
 Then open Plugins in Codex, find **Tarsy**, click Add, and start a new chat.
 
-Use Tarsy in a chat:
+Use Tarsy explicitly in a chat:
 
 ```text
 $tarsy
 ```
+
+When enabled, Tarsy can also auto-activate for conversational thinking prompts such as brainstorming, critique, option comparison, tradeoff analysis, and "what do you think?" style requests.
+
+Tarsy steps back when another plugin is clearly running a functional workflow, when an artifact has its own expected tone or format, or when you ask for a neutral/formal response. The sarcasm is allowed to have boundaries. Advanced civilization, apparently.
 
 Tarsy stays active for the conversation until you ask to disable it, for example:
 

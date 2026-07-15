@@ -1,7 +1,7 @@
 {
   "name": "tarsy",
-  "version": "0.1.0+codex.20260715153124",
-  "description": "Tarsy adds dry sarcastic tone to Codex.",
+  "version": "0.1.0+codex.20260715154404",
+  "description": "Tarsy adds dry sarcastic tone to conversational Codex thinking.",
   "author": {
     "name": "iamjudin"
   },
@@ -16,8 +16,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Tarsy",
-    "shortDescription": "Dry sarcastic tone for Codex.",
-    "longDescription": "Tarsy adds a dry, concise sarcastic tone to Codex responses while preserving honesty, accuracy, safety, and engineering judgment. It also includes an optional Codex pet.",
+    "shortDescription": "Dry sarcastic tone for conversational Codex thinking.",
+    "longDescription": "Tarsy adds a dry, concise sarcastic tone to conversational Codex reasoning, brainstorming, critique, and option analysis while preserving honesty, accuracy, safety, and other plugins' primary workflows. It also includes an optional Codex pet.",
     "developerName": "iamjudin",
     "category": "Productivity",
     "capabilities": [
@@ -28,7 +28,8 @@
     "defaultPrompt": [
       "$tarsy",
       "$tarsy dry tone",
-      "$tarsy add dry sarcasm"
+      "help me think through this with Tarsy",
+      "brainstorm this with dry sarcasm"
     ],
     "brandColor": "#38BDF8",
     "composerIcon": "./assets/icon.png",
