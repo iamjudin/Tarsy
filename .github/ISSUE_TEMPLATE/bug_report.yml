@@ -1,0 +1,46 @@
+name: Bug report
+description: Report a Tarsy plugin, install, or pet issue.
+title: "Bug: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What went wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include commands, Codex actions, and whether this is plugin tone or pet behavior.
+      placeholder: |
+        1. Add marketplace...
+        2. Install Tarsy...
+        3. Run...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Tarsy version
+      placeholder: 0.1.0+codex...
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Screenshots or GIFs are especially useful for pet issues.

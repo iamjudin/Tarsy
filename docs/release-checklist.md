@@ -2,29 +2,26 @@
 
 Use this before tagging a public Tarsy release.
 
-- Replace placeholder branding assets:
+## Assets
+
+- Confirm branding assets:
+  - `assets/tarsy-github-banner.gif`
   - `assets/tarsy-github-banner.png`
   - `plugins/tarsy/assets/icon.png`
 - Confirm the optional pet package:
   - `plugins/tarsy/pets/tarsy/pet.json`
   - `plugins/tarsy/pets/tarsy/spritesheet.webp`
-- Validate the plugin:
+
+## Validation
+
+Run from the repository root:
 
 ```bash
-PYTHONPATH=/private/tmp/tarsy-yaml-shim python3 \
-  /Users/iamjudin/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py \
-  plugins/tarsy
-```
-
-- Run script checks:
-
-```bash
-bash -n scripts/install-pet.sh
-bash -n plugins/tarsy/scripts/install-pet.sh
+scripts/validate.sh
 git diff --check
 ```
 
-- Smoke test the marketplace locally:
+## Local Smoke Test
 
 ```bash
 codex plugin marketplace add /Users/iamjudin/Desktop/Plugins/Tarsy
@@ -32,8 +29,25 @@ codex plugin add tarsy@tarsy
 scripts/install-pet.sh
 ```
 
-- Publish:
-  - push `main` to `iamjudin/Tarsy`;
-  - tag `v0.1.0`;
-  - create the GitHub Release;
-  - test install with `codex plugin marketplace add iamjudin/Tarsy`.
+Start a new Codex chat and invoke:
+
+```text
+$tarsy
+```
+
+Confirm:
+
+- the skill changes tone only;
+- the plugin card shows the latest icon and metadata;
+- the pet appears after selecting Tarsy and restarting/reselecting if needed.
+
+## Publish
+
+- Push `main` to `iamjudin/Tarsy`.
+- Tag `v0.1.0` when the release is ready.
+- Create the GitHub Release.
+- Test public install with:
+
+```bash
+codex plugin marketplace add iamjudin/Tarsy
+```
