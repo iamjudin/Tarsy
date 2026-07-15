@@ -8,10 +8,6 @@ It keeps the useful parts boringly intact: honesty, accuracy, safety, and engine
 
 Tarsy also includes an optional Codex pet: a small Codex-blue robot companion.
 
-![License](https://img.shields.io/badge/license-PolyForm%20Noncommercial-38bdf8)
-![Plugin](https://img.shields.io/badge/Codex-plugin-111827)
-![Pet](https://img.shields.io/badge/pet-included-22c55e)
-
 ## Features
 
 - One-switch dry sarcastic tone for Codex.
