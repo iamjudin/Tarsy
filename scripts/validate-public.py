@@ -136,7 +136,7 @@ def validate_pet() -> None:
 def validate_assets() -> None:
     require_image_size(ROOT / "assets" / "tarsy-github-banner.png", (1280, 640), animated=False)
     require_image_size(ROOT / "assets" / "tarsy-github-banner.gif", (1280, 640), animated=True)
-    icon_path = PLUGIN / "assets" / "icon.png"
+    icon_path = PLUGIN / "assets" / "icon_tarsy.png"
     require_file(icon_path)
     with Image.open(icon_path) as icon:
         if icon.width != icon.height or icon.width < 512:

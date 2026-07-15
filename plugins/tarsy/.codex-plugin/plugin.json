@@ -1,6 +1,6 @@
 {
   "name": "tarsy",
-  "version": "0.1.0+codex.20260715154404",
+  "version": "0.1.0+codex.20260715155254",
   "description": "Tarsy adds dry sarcastic tone to conversational Codex thinking.",
   "author": {
     "name": "iamjudin"
@@ -32,7 +32,7 @@
       "brainstorm this with dry sarcasm"
     ],
     "brandColor": "#38BDF8",
-    "composerIcon": "./assets/icon.png",
-    "logo": "./assets/icon.png"
+    "composerIcon": "./assets/icon_tarsy.png",
+    "logo": "./assets/icon_tarsy.png"
   }
 }
