@@ -136,7 +136,14 @@ def validate_pet() -> None:
 def validate_assets() -> None:
     require_image_size(ROOT / "assets" / "tarsy-github-banner.png", (1280, 640), animated=False)
     require_image_size(ROOT / "assets" / "tarsy-github-banner.gif", (1280, 640), animated=True)
-    require_image_size(PLUGIN / "assets" / "icon.png", (1024, 1024), animated=False)
+    icon_path = PLUGIN / "assets" / "icon.png"
+    require_file(icon_path)
+    with Image.open(icon_path) as icon:
+        if icon.width != icon.height or icon.width < 512:
+            fail(f"{icon_path.relative_to(ROOT)} must be square and at least 512x512, got {icon.size}")
+        if getattr(icon, "n_frames", 1) != 1:
+            fail(f"{icon_path.relative_to(ROOT)} should be static")
+    ok(f"{icon_path.relative_to(ROOT)} is a square {icon.width}x{icon.height} icon")
 
 
 def validate_gif_frames() -> None:
