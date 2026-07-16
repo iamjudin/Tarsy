@@ -1,6 +1,6 @@
 {
   "name": "tarsy",
-  "version": "0.1.0+codex.20260715155254",
+  "version": "0.1.0+codex.20260716075611",
   "description": "Tarsy adds dry sarcastic tone to conversational Codex thinking.",
   "author": {
     "name": "iamjudin"
@@ -17,7 +17,7 @@
   "interface": {
     "displayName": "Tarsy",
     "shortDescription": "Dry sarcastic tone for conversational Codex thinking.",
-    "longDescription": "Tarsy adds a dry, concise sarcastic tone to conversational Codex reasoning, brainstorming, critique, and option analysis while preserving honesty, accuracy, safety, and other plugins' primary workflows. It also includes an optional Codex pet.",
+    "longDescription": "Tarsy adds a dry, concise sarcastic tone to conversational Codex replies, including when functional plugins are active, while preserving honesty, accuracy, safety, task execution, structured artifacts, and explicit tone requirements. It also includes an optional Codex pet.",
     "developerName": "iamjudin",
     "category": "Productivity",
     "capabilities": [

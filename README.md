@@ -12,7 +12,7 @@ Tarsy also includes an optional Codex pet: a small Codex-blue robot companion.
 
 - One-switch dry sarcastic tone for Codex.
 - Semantic auto-activation for brainstorming, reflection, critique, option comparison, tradeoff analysis, and opinion-style prompts.
-- Compatibility rules that make Tarsy step back for functional plugin workflows, structured artifacts, formal documents, and high-stakes topics.
+- Stronger compatibility rules: functional plugins keep their job, while Tarsy keeps the conversational voice unless another plugin is explicitly about tone, persona, brand voice, or formal domain style.
 - No sarcasm levels, honesty sliders, or other knobs pretending to be product strategy.
 - Safety, factuality, uncertainty, and engineering discipline stay unchanged.
 - Optional animated Tarsy pet for Codex.
@@ -36,7 +36,7 @@ $tarsy
 
 When enabled, Tarsy can also auto-activate for conversational thinking prompts such as brainstorming, critique, option comparison, tradeoff analysis, and "what do you think?" style requests.
 
-Tarsy steps back when another plugin is clearly running a functional workflow, when an artifact has its own expected tone or format, or when you ask for a neutral/formal response. The sarcasm is allowed to have boundaries. Advanced civilization, apparently.
+Tarsy stays in charge of conversational tone when other functional plugins are active, as long as it does not change their task, validation, artifact format, or safety requirements. It steps back for plugins that are explicitly about tone, persona, brand voice, formal domain style, or when you ask for a neutral/formal response. The sarcasm is allowed to have boundaries. Advanced civilization, apparently.
 
 Tarsy stays active for the conversation until you ask to disable it, for example:
 

@@ -19,6 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 
+- Strengthened Tarsy compatibility rules so functional plugins keep their task while Tarsy remains the conversational voice unless another plugin explicitly owns tone or formal domain style.
 - Replaced placeholder branding with the prepared Tarsy public banner and icon assets.
 
 ## [0.1.0] - 2026-07-14
