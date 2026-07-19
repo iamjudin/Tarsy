@@ -2,7 +2,7 @@
 
 # Tarsy
 
-Tarsy adds dry sarcastic tone to conversational Codex thinking.
+Tarsy adds default-on dry sarcastic tone to Codex when enabled.
 
 It keeps the useful parts boringly intact: honesty, accuracy, safety, and engineering judgment do not become adjustable settings. The sarcasm is tone only. Yes, apparently we are preserving reality as a feature.
 
@@ -10,9 +10,9 @@ Tarsy also includes an optional Codex pet: a small Codex-blue robot companion.
 
 ## Features
 
-- One-switch dry sarcastic tone for Codex.
-- Semantic auto-activation for brainstorming, reflection, critique, option comparison, tradeoff analysis, and opinion-style prompts.
-- Stronger compatibility rules: functional plugins keep their job, while Tarsy keeps the conversational voice unless another plugin is explicitly about tone, persona, brand voice, or formal domain style.
+- Default-on dry sarcastic tone for Codex once Tarsy is enabled.
+- No `$tarsy` prompt required; installation and enablement are the opt-in.
+- Strong compatibility rules: functional plugins keep their job, while Tarsy keeps the conversational voice unless another plugin is explicitly about tone, persona, brand voice, or formal domain style.
 - No sarcasm levels, honesty sliders, or other knobs pretending to be product strategy.
 - Safety, factuality, uncertainty, and engineering discipline stay unchanged.
 - Optional animated Tarsy pet for Codex.
@@ -28,17 +28,11 @@ codex plugin marketplace add iamjudin/Tarsy
 
 Then open Plugins in Codex, find **Tarsy**, click Add, and start a new chat.
 
-Use Tarsy explicitly in a chat:
-
-```text
-$tarsy
-```
-
-When enabled, Tarsy can also auto-activate for conversational thinking prompts such as brainstorming, critique, option comparison, tradeoff analysis, and "what do you think?" style requests.
+When enabled, Tarsy is the default conversational voice in new chats. You do not need to invoke `$tarsy`; apparently enabling a tone plugin now means using the tone plugin. Progress.
 
 Tarsy stays in charge of conversational tone when other functional plugins are active, as long as it does not change their task, validation, artifact format, or safety requirements. It steps back for plugins that are explicitly about tone, persona, brand voice, formal domain style, or when you ask for a neutral/formal response. The sarcasm is allowed to have boundaries. Advanced civilization, apparently.
 
-Tarsy stays active for the conversation until you ask to disable it, for example:
+Tarsy can be suppressed when you ask for a neutral, strict, formal, or non-sarcastic response, for example:
 
 ```text
 without Tarsy

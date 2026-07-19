@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+### Changed
+
+- Changed Tarsy from explicit/semantic activation to default-on conversational tone when installed and enabled, with suppression rules for explicit tone requests, high-stakes contexts, artifacts, and tone-owning plugins.
+
 ## [0.1.0] - 2026-07-19
 
 ### Added
